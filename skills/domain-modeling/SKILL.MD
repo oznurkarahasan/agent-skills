@@ -1,6 +1,7 @@
 ---
 name: domain-modeling
 description: Build and sharpen the project's domain model and terminology. Manage CONTEXT.md and write Architecture Decision Records (ADRs).
+---
 
 # Domain Modeling & Architecture Records
 

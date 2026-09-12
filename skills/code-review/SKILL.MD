@@ -1,6 +1,7 @@
 ---
 name: code-review
 description: Multi-axis code review evaluating both Spec (Correctness) and Standards (Architecture/Style). Use before merging PRs, committing large changes, or evaluating another agent's code.
+---
 
 # Code Review & Quality Audit
 

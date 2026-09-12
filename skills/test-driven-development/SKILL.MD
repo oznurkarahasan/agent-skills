@@ -1,12 +1,11 @@
 ---
 name: test-driven-development
 description: Test-driven development with red-green-refactor discipline. Use when writing new logic, adding features, or fixing bugs.
+---
 
 # Test-Driven Development (TDD)
 
 Tests are proof — "seems right" is not done. Write behavior-focused tests against public interfaces before touching implementation code.
-
----
 
 ## 1. Discover the Stack First
 

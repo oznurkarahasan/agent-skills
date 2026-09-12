@@ -1,6 +1,7 @@
 ---
 name: diagnosing-bugs
 description: Systematic root-cause debugging and diagnosis loop for test failures, broken builds, runtime errors, and performance regressions. Use when something is broken, throwing, slow, or behavior doesn't match expectations.
+---
 
 # Diagnosing Bugs & Root-Cause Analysis
 

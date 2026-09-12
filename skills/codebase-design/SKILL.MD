@@ -1,6 +1,7 @@
 ---
 name: codebase-design
 description: Shared vocabulary and principles for designing deep modules, setting seams, and dependency classification.
+---
 
 # Codebase Design
 

@@ -1,6 +1,7 @@
 ---
 name: intent-discovery
 description: Extracts what the user actually wants before any code or plan is written. Uses a one-question-at-a-time interview with explicit hypotheses until ~95% confidence is reached.
+---
 
 # Intent Discovery (Interview Me)
 
