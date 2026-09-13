@@ -10,7 +10,22 @@ The cheapest moment to find the gap between what people ask for and what they ac
 ## 1. The Interview Process
 
 ### Fast-Track (Escape Hatch)
-If the user's initial message already contains the Outcome, User, Success criteria, and Constraints clearly, skip the interview step. Present the 6-line confirmation text from Step 4 directly and wait for approval.
+You may skip the full interview **only if all four of the following criteria are unambiguously and explicitly stated in the user's message** — inferred, implied, or "obvious" answers do not count.
+
+**Fast-Track Checklist — all four must be checkable as:**
+- [ ] **Outcome** — A concrete deliverable or end state is named (not a vague goal like "improve X").
+- [ ] **User** — The specific person or system that benefits is identified.
+- [ ] **Success criteria** — At least one measurable or observable condition for "done" is stated.
+- [ ] **Constraint** — At least one binding limit (time, tech, scope, budget) is explicitly given.
+
+If even **one box cannot be checked from the literal text**, you MUST start the interview at Step 1. Do not infer missing criteria from context.
+
+**Handling "Why now" and "Out of scope":** These two fields are required in the Step 4 restate but are intentionally excluded from the checklist above — they are rarely stated upfront. When Fast-Track is triggered:
+- If either field is **explicitly present** in the user's message, use it as written.
+- If either field is **absent**, ask it as a **single targeted question** (one at a time, following Step 2 format) before presenting the restate. Do NOT fabricate or infer a value.
+- Asking for a missing "Why now" or "Out of scope" does **not** invalidate the Fast-Track; it is a narrow targeted fill-in, not a full interview.
+
+When all four checklist criteria are present and the two supplementary fields are resolved, proceed to Step 4 and wait for explicit approval.
 
 ### Step 1: Hypothesize
 Before asking anything, write down your current best read of what the user wants in one sentence, plus an honest confidence number (0–100%):
@@ -60,3 +75,4 @@ You need an explicit "yes."
 - A question without your hypothesis attached.
 - Producing a spec, plan, or task list before the user has explicitly confirmed your restate.
 - Saving an intent document before confirmation.
+- Triggering Fast-Track because something "seems obvious" or "can be inferred" — Fast-Track requires all four criteria to be **explicitly written**, not deduced.
