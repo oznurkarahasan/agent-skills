@@ -50,10 +50,14 @@ Evaluate the structure. Instead of saying "this is complex", identify the specif
 
 ---
 
-## 4. Security & Dependencies
+## 4. Security & Hardening (OWASP Baseline)
 
-- **Untrusted Data:** Is input from users, APIs, or the DB validated at the boundary before use?
-- **Secrets:** Are any tokens, keys, or credentials hardcoded in the diff? (Flag as **Critical**).
+Treat all external input as malicious. Evaluate the diff against these critical vectors:
+
+- **Injection (SQL/Command):** Are database queries properly parameterized? Is raw user input ever concatenated into SQL strings or shell commands? (Flag as **Critical**).
+- **Authentication & Authorization:** Are protected routes verifying *permissions*, not just authentication? Are JWTs or session tokens validated and stored securely (not in `localStorage` for sensitive contexts)?
+- **XSS & Data Validation:** Is input from users, WebSockets, or external APIs sanitized before storage and escaped before rendering? Does the UI treat API responses as trusted HTML?
+- **Secrets:** Are tokens, API keys, passwords, or database credentials hardcoded in the diff? (Flag as **Critical**).
 - **Dependencies:** If `package.json`, `Cargo.toml`, or `requirements.txt` is modified:
   - Is the new dependency strictly necessary, or does the standard library suffice?
   - Was it bundled with unrelated code changes? (Dependency bumps must be isolated).
@@ -78,3 +82,4 @@ To complete a review, output your findings grouped by axis.
 - [ ] Unrequested scope creep is flagged.
 - [ ] Structural flaws are named using Fowler's smells with concrete remedies.
 - [ ] No dead code or commented-out blocks are left behind.
+- [ ] Security axis checked: injection, authz, XSS, secrets, and dependencies evaluated.

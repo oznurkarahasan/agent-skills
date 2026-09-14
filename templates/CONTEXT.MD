@@ -17,7 +17,7 @@ The single source of truth for a project's ubiquitous language, always stored as
 _Avoid_: Dictionary, terms sheet, vocabulary list.
 
 **Seam**:
-A place where behavior can be altered without editing code in that place; the exact location where a module's public interface lives and where tests are written. Regulated by `codebase-design` and `tdd`.
+A place where behavior can be altered without editing code in that place; the exact location where a module's public interface lives and where tests are written. Regulated by `codebase-design` and `test-driven-development`.
 _Avoid_: Boundary (too overloaded), endpoint.
 
 **Tight Feedback Loop**:
@@ -25,7 +25,7 @@ A single, deterministic, fast-executing command (script, test, or curl) that con
 _Avoid_: Repro steps, test case.
 
 **Spike**:
-Throwaway, exploratory code written to learn a new framework or feasibility. Exempt from strict TDD, but must be discarded before final implementation.
+Throwaway, exploratory code written to learn a new framework or feasibility. Exempt from strict `test-driven-development`, but must be discarded before final implementation.
 _Avoid_: Prototype (unless it's UI-only), draft.
 
 ## Relationships
@@ -33,7 +33,7 @@ _Avoid_: Prototype (unless it's UI-only), draft.
 - A **Skill** regulates one specific phase of development.
 - The `intent-discovery` skill produces the **Intent**.
 - The `domain-modeling` skill writes and updates the **Domain Glossary**.
-- `tdd` requires tests to be written exactly at a **Seam**.
+- `test-driven-development` requires tests to be written exactly at a **Seam**.
 - `diagnosing-bugs` requires a **Tight Feedback Loop** before generating hypotheses.
 
 ## Flagged ambiguities
